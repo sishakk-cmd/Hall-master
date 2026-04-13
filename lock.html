@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Lock/Unlock Management</title>
+</head>
+<body>
+    <h1>Attendance Management</h1>
+    <div>
+        <button id="lockButton">Lock Attendance</button>
+        <button id="unlockButton">Unlock Attendance</button>
+    </div>
+    <div>
+        <p id="status">Current Status: <span id="lockStatus">Unlocked</span></p>
+    </div>
+    <script>
+        const lockButton = document.getElementById('lockButton');
+        const unlockButton = document.getElementById('unlockButton');
+        const lockStatus = document.getElementById('lockStatus');
+
+        lockButton.addEventListener('click', () => {
+            lockStatus.textContent = 'Locked';
+            alert('Attendance has been locked.');
+        });
+
+        unlockButton.addEventListener('click', () => {
+            lockStatus.textContent = 'Unlocked';
+            alert('Attendance has been unlocked.');
+        });
+    </script>
+</body>
+</html>
