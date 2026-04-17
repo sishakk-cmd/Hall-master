@@ -1,5 +1,8 @@
 // shared API and authentication utilities
 
+// Deployment ID
+const DEPLOYMENT_ID = 'AKfycbwIw_UefasK4boBCGTzVEKOGGFqu8hhoODx1xvQjgVRfPWbasdgv6Z-m2l1R2cCh3iEkQ';
+
 // Function to make API calls
 async function apiCall(endpoint, method = 'GET', body = null) {
     const options = {
@@ -26,4 +29,4 @@ async function authenticate(username, password) {
     return response.token;
 }
 
-export { apiCall, authenticate };
+export { apiCall, authenticate, DEPLOYMENT_ID };
