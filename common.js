@@ -1,7 +1,7 @@
 // shared API and authentication utilities
 
 // Deployment ID
-const DEPLOYMENT_ID = 'AKfycbwIw_UefasK4boBCGTzVEKOGGFqu8hhoODx1xvQjgVRfPWbasdgv6Z-m2l1R2cCh3iEkQ';
+const DEPLOYMENT_ID = 'https://script.google.com/macros/s/AKfycbzoqLvGJx7rIaJvc_ntgpz3aOldOjuIu9XsEE7H-996ihbaY6Lf7hXHQq8puMiCZf3lSg/exec';
 
 // Function to make API calls
 async function apiCall(endpoint, method = 'GET', body = null) {
